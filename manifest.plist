@@ -1,39 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-<key></key>
-<array>
-<dict>
-<key></key>
-<array>
-<dict>
-<key></key>
-<string>software-package</string>
-<key>url</key>
-<string>https://raw.githubusercontent.com/quanpeifeng420563670/iostest/master/app.ipa</string>
-</dict>
-<dict>
-<key></key>
-<string></string>
-<key></key>
-<true/>
-<key>url</key>
-<string>https://raw.githubusercontent.com/quanpeifeng420563670/iostest/master/100x100.png</string>
-</dict>
-</array>
-<key></key>
-<dict>
-<key></key>
-<string></string>
-<key></key>
-<string></string>
-<key></key>
-<string></string>
-<key></key>
-<string></string>
-<key>title</key>
-<string>iosApptest</string>
-</dict>
-</dict>
-</array>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>assets</key>
+			<array>
+				<dict>
+					<key>kind</key>
+					<string>software-package</string>
+					<key>url</key>
+					<string>https://raw.githubusercontent.com/quanpeifeng420563670/iostest/master/app.ipa</string>   //ipa 地址，不需要支持https
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>display-image</string>
+					<key>needs-shine</key>
+					<true/>
+					<key>url</key>
+					<string>https://raw.githubusercontent.com/quanpeifeng420563670/iostest/master/100x100.png</string>   //下载的图标，如果不写，未下载完成之前显示空白图标
+ 
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>full-size-image</string>
+					<key>needs-shine</key>
+					<true/>
+					<key>url</key>
+					<string>https://raw.githubusercontent.com/quanpeifeng420563670/iostest/master/100x100.png</string> //下载的图标，如果不写，未下载完成之前显示空白图标
+ 
+				</dict>
+			</array>
+			<key>metadata</key>
+			<dict>
+				<key>bundle-identifier</key>
+				<string>com.yili.fssc</string>      //bundle identifier     
+				<key>bundle-version</key>
+				<string>1.0.0</string>              //当前版本号
+				<key>kind</key>
+				<string>software</string>
+				<key>subtitle</key>
+				<string>ios综合办公</string>            //手机上显示的名称副标题
+				<key>title</key>
+				<string>ios综合办公</string>            //手机上显示的名称
+ 
+			</dict>
+		</dict>
+	</array>
 </dict>
 </plist>
